@@ -1,62 +1,93 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<h1 align="center">
+    📖 Controle de Tarefas</a>
+</h1>
+<p align="center">Projeto de um sistema de controle de tarefas, a partir do aprendizado do curso da <a href="https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/">Udemy</a>, com o uso do framework Laravel. Nele, é possível gerenciar tarefas por usuário, com um sistema de autenticação nativo do framework.  </p>
+ 
+ <h4 align="center"> 
+	✅  Finalizado  ✅
+</h4>
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+ <a href="#features">Funcionalidades</a> •
+ <a href="#requisitos">Pré-requisitos</a> •
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#autor">Autor</a>
 </p>
 
-## About Laravel
+<h3 id="features">⚙️ Funcionalidades</h3>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- [x] Login e Cadastro através da funcionalidade nativa do PHP
+- [x] Criação de conta 
+- [x] Validação e troca de senha por e-mail
+- [x] Cadastro, alteração, visualização e exclusão de tarefas
+- [x] Conclusão de uma tarefa e listagem das tarefas concluídas
+- [x] Notificações das tarefas por e-mail  
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<h3 id="requisitos">🎲 Pré-requisitos</h3>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Antes de começar, você vai precisar ter instalado em sua máquina o [Git](https://git-scm.com), o [Composer](https://getcomposer.org/download/) e o [xampp](https://www.apachefriends.org/pt_br/index.html). 
+Além disto é bom ter um editor para trabalhar com o código, como o [VSCode](https://code.visualstudio.com/)
 
-## Learning Laravel
+### 🎲 Rodando o Back End (servidor) e o Banco de Dados
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+```bash
+#Na pasta htdocs do xampp, inicie o git
+$ git init
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+# Clone este repositório em um diretório local
+$ git clone https://github.com/filipebomfim/controle-tarefas
 
-## Laravel Sponsors
+#No diretório, abra o prompt de comando e instale as dependências do projeto com:
+$ php composer install
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+#E logo após, atualize as dependências com:
+$ php composer update
 
-### Premium Partners
+#Antes de inicializar o servidor algumas configurações precisam ser feitas:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
+# 1. Copie o arquivo de nome '.env.example' na raíz do diretório e cole no mesmo local com um arquivo de nome '.env';
 
-## Contributing
+# 2. Insira as seguintes informações referentes ao seu phpMyAdmin no arquivo '.env':
+#    2.1. DB_CONNECTION = mysql
+#    2.2. DB_HOST= 127.0.0.1 (Caso seja outro IP, alterar)
+#    2.3. DB_PORT=3306 (Caso seja outra porta, alterar)
+#    2.4. DB_DATABASE= (Nome da base de dados)
+#    2.5. DB_USERNAME= (Nome do usuário do banco de dados)
+#    2.6. DB_PASSWORD= (Senha do usuário do banco de dados)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+#3. Configure um servidor de e-mail para receber as mensagens de notificação alterando as 
+#seguintes informações no arquivo '.env':
+#    3.1. MAIL_MAILER= (Nome do servidor)
+#    3.2. MAIL_HOST= (Endereço do servidor)
+#    3.3. MAIL_PORT= (Porta do servidor)
+#    3.4. MAIL_USERNAME=(Nome do usuário do servidor)
+#    3.5. MAIL_PASSWORD= (Senha do usuário do servidor)
+#    3.6. MAIL_ENCRYPTION= (Tipo de criptografia)
+   
+#Execute o servidor Apache e o MySQL no painel de controle do xampp
+#Crie uma base de dados no phpMyAdmin e ponha o nome dela de acordo com o que foi colocado no item 2.4
 
-## Code of Conduct
+#Carregue as tabelas de dados do banco com o comando:
+$ php artisan migrate
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+#Execute o servidor no diretório onde o projeto foi baixado com:
+$ php artisan serve
+```
 
-## Security Vulnerabilities
+<h3 id="tecnologias">🛠 Tecnologias</h3>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+As seguintes tecnologias foram usadas na construção do projeto:
 
-## License
+- HTML5
+- CSS3
+- PHP
+- Laravel 8
+- SQL
+- Bootstrap 4
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<h3 id="autor">🦸 Autor</h3>
+
+Feito com carinho e dedicação por mim, rs. Filipe Bomfim 👋🏽 Entre em contato!
+
+[![Gmail Badge](https://img.shields.io/badge/-Filipe-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:filipebomfim.dev@gmail.com)](mailto:filipebomfim.dev@gmail.com)
+[![Linkedin Badge](https://img.shields.io/badge/-Filipe-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/filipe-bomfim-931256224/)](https://www.linkedin.com/in/filipe-bomfim-931256224/)
