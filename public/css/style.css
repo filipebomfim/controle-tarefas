@@ -1,0 +1,108 @@
+
+.navbar-nav ion-icon{
+    font-size: 24px;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+.principal{
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.principal h1{
+    background-color: #ffffff10;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cover{
+    color: rgb(255, 255, 255);
+    position: relative;
+    height: calc(100vh - 50px);
+    background: url("../img/bg_principal.jpg") no-repeat scroll 0px 100% / cover transparent;
+    
+}
+
+
+
+.card-header{
+    color: white;
+    font-size: 18px;
+}
+
+.card-header ion-icon{
+  font-size: 18px;
+}
+
+.card-header a{
+  font-size: 14px;
+  vertical-align: bottom;
+}
+
+.card table{
+  margin: 0 auto;
+}
+
+
+.icon-edit{
+  font-size: 24px;
+  color: yellowgreen;
+}
+
+.icon-trash{
+  font-size: 24px;
+  color: red;
+}
+
+.icon-finish,
+.icon-restaure{
+  font-size: 24px;
+  color: green;
+}
+
+
+.pagination > li > a
+{
+    background-color: white;
+    color: #343a40 ;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: #343a40  !Important;
+    border: solid 1px #343a40  !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #343a40  !Important;
+    border: solid 1px #343a40 ;
+}
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  
