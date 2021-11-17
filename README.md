@@ -1,7 +1,7 @@
 <h1 align="center">
     📖 Controle de Tarefas</a>
 </h1>
-<p align="center">Projeto de um sistema de controle de tarefas, a partir do aprendizado do curso da <a href="https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/">Udemy</a>, com o uso do framework Laravel. Nele, é possível gerenciar tarefas por usuário, com um sistema de autenticação nativo do framework.  </p>
+<p align="center">Projeto de um sistema de controle de tarefas, a partir do aprendizado do curso da <a href="https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/">Udemy</a>, com o uso do framework Laravel. Nele, é possível gerenciar tarefas por usuário, com um sistema de autenticação nativo do framework. Todo o projeto foi criado e executado no Windows 11  </p>
  
  <h4 align="center"> 
 	✅  Finalizado  ✅
