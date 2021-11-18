@@ -1,11 +1,7 @@
 @component('mail::message')
 # {{$tarefa}}
 
-Nova Data limite de conclusão: {{$data_limite_conclusao}}
-
-@component('mail::button', ['url' => $url])
-Clique aqui para ver a tarefa
-@endcomponent
+Nova Data limite de conclusão: {{$data_limite_conclusao}} <hr>
 
 Atenciosamente,<br>
 {{ config('app.name') }}

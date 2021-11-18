@@ -29,7 +29,6 @@
                     <table class="table table-hover text-center">
                       <thead>
                         <tr>
-                          <th scope="col">ID</th>
                           <th scope="col">Tarefa</th>
                           <th scope="col">Data Limite Conclusão</th>
                           <th>Editar</th>
@@ -40,7 +39,6 @@
                       <tbody>
                           @foreach ($tarefas as $key => $tarefa)
                               <tr>
-                                  <th scope="row">{{$tarefa->id}}</th>
                                   <td>{{$tarefa->tarefa}}</td>
                                   <td>{{date('d/m/Y',strtotime($tarefa->data_limite_conclusao))}}</td>
                                   <td><a href="{{route('tarefa.edit', $tarefa->id)}}"><ion-icon name="create-outline" class="icon-edit"></ion-icon></a></td>

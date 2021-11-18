@@ -24,11 +24,11 @@
                         {{$msg}} 
                       </div>                 
                     @endisset
-
-                  <table class="table table-striped table-responsive text-center">
+                
+                <div class="table-responsive">
+                  <table class="table table-hover text-center">
                     <thead>
                       <tr>
-                        <th scope="col">ID</th>
                         <th scope="col">Tarefa</th>
                         <th scope="col">Data de Conclusão</th>
                         <th>Restaurar</th>
@@ -37,7 +37,6 @@
                     <tbody>
                         @foreach ($tarefas as $key => $tarefa)
                             <tr>
-                                <th scope="row">{{$tarefa->id}}</th>
                                 <td>{{$tarefa->tarefa}}</td>
                                 <td>{{date('d/m/Y',strtotime($tarefa->deleted_at))}}</td>
                                 <td>
@@ -50,6 +49,7 @@
                         @endforeach                          
                     </tbody>
                   </table>
+                </div>
 
                   <nav class="py-4">
                     <ul class="pagination d-flex justify-content-center">

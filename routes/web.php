@@ -45,5 +45,4 @@ Route::resource('tarefa','App\Http\Controllers\TarefaController')->middleware('v
 Route::get('/denied', 'App\Http\Controllers\HomeController@denied')
     ->name('denied');
 
-$locale = App::currentLocale();
-App::setLocale($locale);
+
