@@ -1,7 +1,10 @@
 <h1 align="center">
     📖 Controle de Tarefas</a>
 </h1>
-<p align="center">Projeto de um sistema de controle de tarefas, a partir do aprendizado do curso da <a href="https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/">Udemy</a>, com o uso do framework Laravel. Nele, é possível gerenciar tarefas por usuário, com um sistema de autenticação nativo do framework. Todo o projeto foi criado e executado no Windows 11  </p>
+<p align="center">Projeto de um sistema de controle de tarefas, a partir do aprendizado do curso da <a href="https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/">Udemy</a>, com o uso do framework Laravel. Nele, é possível gerenciar tarefas por usuário, com um sistema de autenticação nativo do framework. Você pode acessar o preview do sistema clicando em qualquer uma das badges abaixo. Todo o projeto foi criado e executado no Windows 11  </p>
+
+ [![Generic badge](https://img.shields.io/badge/VERSÃO-1.0-<COLOR>.svg)](http://tarefas2021.epizy.com/public/)
+ [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://tarefas2021.epizy.com/public/)
  
  <h4 align="center"> 
 	✅  Finalizado  ✅
