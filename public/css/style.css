@@ -33,6 +33,13 @@
     
 }
 
+.bg-red{
+  background-color: rgba(255, 13, 0, 0.3);
+}
+
+.bg-yellow{
+  background-color: rgba(217, 255, 0, 0.3);
+}
 
 
 .card-header{
@@ -53,21 +60,24 @@
   margin: 0 auto;
 }
 
-
-.icon-edit{
-  font-size: 24px;
-  color: yellowgreen;
+.legenda{
+  float: right;
 }
 
-.icon-trash{
-  font-size: 24px;
-  color: red;
+.legenda-content{
+  display: inline-block;
 }
 
-.icon-finish,
-.icon-restaure{
+.circle{
+  border: 1px solid white;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.icon{
   font-size: 24px;
-  color: green;
 }
 
 
