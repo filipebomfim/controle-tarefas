@@ -6,9 +6,6 @@
  [![Generic badge](https://img.shields.io/badge/VERSÃO-1.0-<COLOR>.svg)](http://tarefas2021.epizy.com/public/)
  [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://tarefas2021.epizy.com/public/)
  
- <h4 align="center"> 
-	✅  Finalizado  ✅
-</h4>
 
 <p align="center">
  <a href="#features">Funcionalidades</a> •
@@ -24,7 +21,8 @@
 - [x] Validação e troca de senha por e-mail
 - [x] Cadastro, alteração, visualização e exclusão de tarefas
 - [x] Conclusão de uma tarefa e listagem das tarefas concluídas
-- [x] Notificações das tarefas por e-mail  
+- [x] Notificações das tarefas por e-mail
+- [x] Retorno visual sobre as tarefas atualizadas ou perto do vencimento   
 
 <h3 id="requisitos">🎲 Pré-requisitos</h3>
 
