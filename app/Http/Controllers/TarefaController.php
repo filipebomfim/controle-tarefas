@@ -21,13 +21,16 @@ class TarefaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+
         $tarefas = Tarefa::where('user_id',Auth::user()->id)
             ->orderBy('data_limite_conclusao')
             ->with('user')
             ->paginate(5);
-        return view('tarefas.index', compact('tarefas'));
+        $msg = $request->msg;
+        return view('tarefas.index', compact('tarefas','msg'));
+        
     }
 
     /**
@@ -132,7 +135,7 @@ class TarefaController extends Controller
     {
         if (Auth::user()->id != $tarefa->user_id) return redirect()->route('denied'); 
         $tarefa->forceDelete();
-        return redirect()->route('tarefa.index');
+        return redirect()->route('tarefa.index', ['msg'=>'delete']);
             
     }
 
@@ -142,16 +145,17 @@ class TarefaController extends Controller
 
         $destinatario = Auth::user()->email;
         Mail::to($destinatario)->send(new FinalizarTarefaMail($tarefa));
-        return redirect()->route('tarefa.index');
+        return redirect()->route('tarefa.index', ['msg'=>'check']);
     }
 
-    public function listFinished(){
+    public function listFinished(Request $request){
         $tarefas = Tarefa::onlyTrashed()
             ->where('user_id',Auth::user()->id)
             ->orderBy('deleted_at')
             ->with('user')
             ->paginate(5);
-        return view('tarefas.listFinished', compact('tarefas'));
+        $msg = $request->msg;
+        return view('tarefas.listFinished', compact('tarefas', 'msg'));
     }
 
     public function restore($id){
@@ -160,6 +164,6 @@ class TarefaController extends Controller
             ->where('id',$id); 
 
             $tarefa->restore();
-            return redirect()->route('tarefa.finished');
+            return redirect()->route('tarefa.finished', ['msg'=>'restored']);
     }
 }

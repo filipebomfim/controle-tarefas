@@ -1,14 +1,19 @@
 @if ($tarefas->isEmpty())
 <div class="alert alert-dark" role="alert">
   <ion-icon name="close-outline" class="align-middle"></ion-icon>
-  Não existem tarefas cadastradas. <strong><hr> Hora de se organizar hein?</strong> 
+  <strong>Não existem tarefas cadastradas.</strong><hr> Hora de se organizar hein? 
 </div>
 
 @else
   @isset ($msg)
     <div class="alert alert-success" role="alert">
       <ion-icon name="checkmark-outline" class="align-middle"></ion-icon>
-      {{$msg}} 
+      @if ($msg == 'delete')
+          <strong>Tarefa Removida com sucesso</strong>
+      @endif
+      @if ($msg == 'check')
+          <strong>Tarefa Concluída</strong>
+      @endif
     </div>                 
   @endisset
 
