@@ -7,7 +7,7 @@
         <div class="col-md-7">
             <div class="card">
                 <div class="card-header bg-dark">
-                  Tarefas de {{Auth::user()->name}}
+                  Tarefas de {{$tarefas->first()->user->name}}
                 </div>
 
                 <div class="card-body">

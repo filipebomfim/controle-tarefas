@@ -6,7 +6,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header bg-dark">
-                  Tarefas Concluídas de {{Auth::user()->name}}
+                  Tarefas Concluídas de {{$tarefas->first()->user->name}}
                 </div>
 
                 <div class="card-body">

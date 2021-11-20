@@ -54,7 +54,7 @@ class User extends Authenticatable implements MustVerifyEmail //Implements habil
     }
 
     public function tarefas(){
-        $this->hasMany(Tarefa::class);
+        $this->hasMany('App\Models\Tarefa');
     }
 
     

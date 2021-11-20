@@ -25,6 +25,7 @@ class TarefaController extends Controller
     {
         $tarefas = Tarefa::where('user_id',Auth::user()->id)
             ->orderBy('data_limite_conclusao')
+            ->with('user')
             ->paginate(5);
         return view('tarefas.index', compact('tarefas'));
     }
@@ -148,6 +149,7 @@ class TarefaController extends Controller
         $tarefas = Tarefa::onlyTrashed()
             ->where('user_id',Auth::user()->id)
             ->orderBy('deleted_at')
+            ->with('user')
             ->paginate(5);
         return view('tarefas.listFinished', compact('tarefas'));
     }
@@ -159,6 +161,5 @@ class TarefaController extends Controller
 
             $tarefa->restore();
             return redirect()->route('tarefa.finished');
-            
     }
 }

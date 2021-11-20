@@ -32,6 +32,7 @@
                   </form>
                   <a href="#" onclick="document.getElementById('form_{{$tarefa->id}}').submit()"><ion-icon name="refresh-outline" class="icon text-success"></ion-icon></a>
               </td>
+              
           </tr>
       @endforeach                          
   </tbody>
