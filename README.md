@@ -16,7 +16,7 @@
 
 <h3 id="features">⚙️ Funcionalidades</h3>
 
-- [x] Login e Cadastro através da funcionalidade nativa do PHP
+- [x] Login e Cadastro através da funcionalidade nativa do Laravel
 - [x] Criação de conta 
 - [x] Validação e troca de senha por e-mail
 - [x] Cadastro, alteração, visualização e exclusão de tarefas
