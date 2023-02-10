@@ -6,6 +6,18 @@
  [![Generic badge](https://img.shields.io/badge/VERSÃO-1.0-<COLOR>.svg)](http://tarefas2021.epizy.com/public/)
  [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://tarefas2021.epizy.com/public/)
  
+ ![image](https://user-images.githubusercontent.com/38573324/218110107-2e19118e-ae25-48aa-8b67-2636296bf8f7.png)
+ ![login](https://user-images.githubusercontent.com/38573324/218110806-d5805396-1d75-44a0-a8a5-ebb4ffc20652.png)
+ ![tarefas](https://user-images.githubusercontent.com/38573324/218111238-e1fc0976-7f8b-4bc3-a96f-678b1933fdd5.png)
+ ![criarTarefa](https://user-images.githubusercontent.com/38573324/218111614-29743525-7d04-4100-9ee7-fef43b69e485.png)
+ ![tarefasConcluidas](https://user-images.githubusercontent.com/38573324/218111513-752dae08-5c77-4b87-be17-4e41e19c2a1f.png)
+
+
+ 
+
+
+
+ 
 
 <p align="center">
  <a href="#features">Funcionalidades</a> •
